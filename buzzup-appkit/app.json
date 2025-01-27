@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "buzzup-appkit",
+    "scheme": "buzzup",
+    "slug": "buzzup-appkit",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "plugins": [
+      "./expo-plugins/installed-wallets.js",
+      "expo-router",
+      "expo-video"
+    ],
+    "ios": {
+      "bundleIdentifier": "xyz.theras.buzzup",
+      "supportsTablet": true,
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "metamask",
+          "trust",
+          "safe",
+          "rainbow",
+          "uniswap",
+          "zerion",
+          "imtokenv2",
+          "argent",
+          "spot",
+          "omni",
+          "dfw",
+          "tpoutside",
+          "robinhood-wallet",
+          "frontier",
+          "blockchain-wallet",
+          "safepalwallet",
+          "bitkeep",
+          "zengo",
+          "oneinch",
+          "bnc",
+          "exodus",
+          "ledgerlive",
+          "mewwallet",
+          "awallet",
+          "keyring",
+          "lobstr",
+          "ontoprovider",
+          "mathwallet",
+          "unstoppabledomains",
+          "obvious",
+          "fireblocks-wc",
+          "ambire",
+          "internetmoney",
+          "walletnow",
+          "bitcoincom"
+        ]
+      }
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "xyz.theras.buzzup",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "94337cd8-7cff-4ea7-b17c-eb9e8eb1aae4"
+      }
+    },
+    "owner": "dellryuzi"
+  }
+}

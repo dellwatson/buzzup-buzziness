@@ -1,0 +1,29 @@
+// 1. Initial Auth
+GET /auth/login
+Input: none
+Output: { oauth_url: string }
+
+// 2. OAuth Callback
+GET /auth/callback
+Input: { code: string, state: string } (URL params)
+Output: { 
+  access_token: string,
+  expires_at: number,
+  user_id: string 
+}
+
+// 3. Token Refresh
+POST /auth/refresh-token
+Input: { 
+  user_id: string,
+  access_token: string 
+}
+Output: {
+  access_token: string,
+  expires_at: number
+}
+
+// 4. Logout (additional recommended route)
+POST /auth/logout
+Input: { user_id: string }
+Output: { success: true }
